@@ -220,6 +220,6 @@ Below are test cases written as templates for Xray in Jira, covering the describ
 **Expected Outcome:**  
 1. App categories remain in English (BUG).  
 2. Only push notifications are updated to Italian.  
-3. The restart suggestion does not resolve the issue (MALA EXPERIENCIA DE USUARIO).  
+3. The restart suggestion does not resolve the issue (BAD USER EXPERIENCE).  
 
 ---
