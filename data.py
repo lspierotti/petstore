@@ -1,0 +1,2 @@
+TOKEN = "aaaabbbb1111"
+INVALID_TOKEN = ""
