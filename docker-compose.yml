@@ -1,0 +1,19 @@
+version: '3.3'
+networks:
+    petstore_api_network:
+        driver: bridge
+services:
+    bash:
+        environment:
+            - env=${ENVIRONMENT}
+            - trunner=jenkins
+        container_name: container_petstore_api
+        volumes:
+            # - '/var/lib/jenkins/mycontainer:/tests'
+            - '/Users/lucaspierotti/Documents/main/propio/testing-personal/petstore:/tests'
+        image: petstore_api
+        command:
+            pytest -vvvv -rs --reruns 2 /tests/ --html=/tests/reports/report_petstore_api.html
+            # pytest -vvvv -s /tests/
+        networks:
+            - petstore_api_network
